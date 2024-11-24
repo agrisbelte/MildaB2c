@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milda.B2C.Blazor", "Milda.B2C.Blazor\Milda.B2C.Blazor.csproj", "{00CC469C-C312-4DA9-BB22-9C554BA7F3AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milda.B2C.Maui", "Milda.B2C.Maui\Milda.B2C.Maui.csproj", "{DE78A9FF-38B7-4EB1-AAF1-9965306CE429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{00CC469C-C312-4DA9-BB22-9C554BA7F3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00CC469C-C312-4DA9-BB22-9C554BA7F3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00CC469C-C312-4DA9-BB22-9C554BA7F3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE78A9FF-38B7-4EB1-AAF1-9965306CE429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE78A9FF-38B7-4EB1-AAF1-9965306CE429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE78A9FF-38B7-4EB1-AAF1-9965306CE429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE78A9FF-38B7-4EB1-AAF1-9965306CE429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
