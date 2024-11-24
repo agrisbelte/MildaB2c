@@ -1,0 +1,6 @@
+@Milda.B2C.Api_HostAddress = http://localhost:5211
+
+GET {{Milda.B2C.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

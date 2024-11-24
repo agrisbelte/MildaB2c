@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Milda.B2C.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7155",
+      "launchBrowser": false
+    }
+  }
+}
