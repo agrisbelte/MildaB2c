@@ -10,6 +10,7 @@ namespace Milda.B2C.Maui
 
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
             Routing.RegisterRoute(nameof(ScopePage), typeof(ScopePage));
+            Routing.RegisterRoute(nameof(WheatherPage), typeof(WheatherPage));
         }
     }
 }

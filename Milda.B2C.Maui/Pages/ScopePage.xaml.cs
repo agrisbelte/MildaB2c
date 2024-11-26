@@ -36,6 +36,27 @@ public partial class ScopePage : ContentPage
     }
 
 
+    // Define the bindable property
+    public static readonly BindableProperty TokenProperty =
+        BindableProperty.Create(
+            nameof(Token),
+            typeof(string),
+            typeof(ScopePage),
+            default,
+            BindingMode.TwoWay,
+            propertyChanged: TokenChnaged);
+
+    public string Token
+    {
+        get => (string)GetValue(TokenProperty);
+        set => SetValue(TokenProperty, value);
+    }
+
+    private static void TokenChnaged(BindableObject bindable, object oldvalue, object newvalue)
+    {
+    }
+
+
     private async Task SetViewDataAsync()
     {
         try
@@ -54,6 +75,7 @@ public partial class ScopePage : ContentPage
             if (account != null)
             {
                 UserName = account.Username;
+                Token = PublicClientSingleton.Instance?.MSALClientHelper?.AuthResult.AccessToken;
             }
 
         }
@@ -74,5 +96,10 @@ public partial class ScopePage : ContentPage
         });
 
         await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+    }
+
+    private async void GetForecast(object? sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(WheatherPage));
     }
 }

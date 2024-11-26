@@ -22,6 +22,11 @@
             Text="{Binding UserName}"
             FontSize="26"
             Padding="0,0,0,20"
+            HorizontalOptions="Center" />  
+        
+        <Entry 
+            Text="{Binding Token}"
+            FontSize="26"
             HorizontalOptions="Center" />
         <Label 
             Padding="0,20,0,20"
@@ -37,6 +42,7 @@
             HorizontalOptions="Center"
             FontSize="16"
         />
+
 
         <Label 
             Padding="0,20,0,0"
@@ -59,6 +65,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button
+            Text="Get Wheater Forecast"
+            HorizontalOptions="Center"
+            Clicked="GetForecast"
+            />
         <Button
             x:Name="SignOutButton"
             Text="Sign Out"

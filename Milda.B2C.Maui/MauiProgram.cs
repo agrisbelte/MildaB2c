@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Milda.B2C.Maui.Pages;
 
 namespace Milda.B2C.Maui
 {
@@ -14,6 +15,9 @@ namespace Milda.B2C.Maui
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddScoped<WeatherViewModel>();
+            builder.Services.AddScoped<WheatherPage>();
 
 #if DEBUG
     		builder.Logging.AddDebug();

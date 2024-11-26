@@ -1,6 +1,9 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
+using Android.App;
+using Microsoft.Identity.Client;
+
 namespace Milda.B2C.Maui.Platforms.Android
 {
     [Activity(Exported =true)]
