@@ -22,7 +22,7 @@ public class UserFunctions(IAuthorizationService authorizationService) : MildaFu
 
         // Authorization successful
         var response = req.CreateResponse(HttpStatusCode.OK);
-        await response.WriteStringAsync($"Token validated successfully! Name: {DisplayName}, Email: {Email}");
+        await response.WriteStringAsync($"Token validated successfully! Name: {DisplayName}, Email: {Email}, Id: {UserId.Substring(0,4)}...");
         return response;
     }
 }
